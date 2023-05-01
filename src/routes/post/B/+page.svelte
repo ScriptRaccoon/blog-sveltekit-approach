@@ -1,0 +1,8 @@
+<h1>Post B</h1>
+
+<p>
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+	consequatur illum ipsum facilis minima perspiciatis a nostrum
+	impedit repudiandae rem ipsam repellendus iusto ducimus, maxime
+	facere, tempore aperiam nisi fugiat!
+</p>

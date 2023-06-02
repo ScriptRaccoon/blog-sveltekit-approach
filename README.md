@@ -29,9 +29,9 @@ Then we can list links to all posts as follows:
 ```svelte
 <ul>
 	{#each posts as post}
-	<li>
-		<a href="/post/{post}">{post}</a>
-	</li>
+        <li>
+            <a href="/post/{post}">{post}</a>
+        </li>
 	{/each}
 </ul>
 ```

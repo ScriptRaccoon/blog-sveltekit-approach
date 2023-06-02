@@ -1,7 +1,5 @@
-<script lang="ts">
-	import LinkBack from "$lib/LinkBack.svelte";
-</script>
-
 <slot />
 
-<LinkBack />
+<p>
+	<a href="/">All posts</a>
+</p>

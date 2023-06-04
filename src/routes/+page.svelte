@@ -1,30 +1,25 @@
 <script lang="ts">
-	let posts: string[] = [];
-
-	function calculate_posts() {
-		const path_object = import.meta.glob(
-			"/src/routes/post/*/*.svelte"
-		);
-		const paths = Object.keys(path_object);
-
-		posts = paths
-			.map((path) => path.split("/").at(-2) ?? "")
-			.filter((name) => name.length > 0);
-	}
-
-	calculate_posts();
+	export let data;
 </script>
 
 <svelte:head>
-	<title>Posts</title>
+	<title>Blog with SvelteKit without markdown</title>
 </svelte:head>
 
-<h1>Posts</h1>
+<section>
+	<h2>All Posts</h2>
 
-<ul>
-	{#each posts as post}
-		<li>
-			<a href="/post/{post}">{post}</a>
-		</li>
-	{/each}
-</ul>
+	<ul>
+		{#each data.paths as path}
+			<li>
+				<a href="/post/{path}">{path}</a>
+			</li>
+		{/each}
+	</ul>
+</section>
+
+<style>
+	ul {
+		margin-left: 1rem;
+	}
+</style>

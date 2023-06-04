@@ -1,5 +1,3 @@
-<h1>Post C</h1>
-
 <p>
 	Lorem ipsum dolor, sit amet consectetur adipisicing elit.
 	Suscipit, dolorum saepe laudantium culpa laborum quidem earum iure

@@ -1,9 +1,10 @@
 <script lang="ts" context="module">
 	import Post from "../Post.svelte";
 	export let title = "How to use page data in SvelteKit";
+	export let date = new Date("2023-05-12");
 </script>
 
-<Post {title}>
+<Post {title} {date}>
 	<p>
 		Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
 		quisquam ex, quia id amet numquam neque, aliquid voluptatum

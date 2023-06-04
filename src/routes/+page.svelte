@@ -16,6 +16,10 @@
 				<a href="/post/{post.link}">
 					{post.title}
 				</a>
+				&ndash;
+				<span class="date"
+					>{post.date.toLocaleDateString()}</span
+				>
 			</li>
 		{/each}
 	</ul>
@@ -24,5 +28,9 @@
 <style>
 	ul {
 		margin-left: 1rem;
+	}
+	.date {
+		color: #444;
+		font-size: smaller;
 	}
 </style>

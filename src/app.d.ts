@@ -10,6 +10,7 @@ declare global {
 
 	type post = {
 		title: string;
+		date: Date;
 		link: string;
 	};
 }

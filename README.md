@@ -56,7 +56,7 @@ Now, in order to list all posts on a page, we make the following computation in 
 
 export const load = async () => {
 	const posts_paths = Object.keys(
-		import.meta.glob("/src/routes/post/*/*.svelte")
+		import.meta.glob("/src/routes/post/*/+page.svelte")
 	);
 
 	const unsorted_posts: post[] = await Promise.all(

@@ -80,7 +80,7 @@ export const load = async () => {
 
 The main steps are the following:
 
--   Vite's `import.meta.glob` function gives us the list of all files in our post folder.
+-   Vite's `import.meta.glob` function gives us the list of all pages in our post folder.
 -   We import the page components with `await import(...)` and extract their props.
 -   In the end, we sort the posts by date.
 -   The type `post` is declared in `app.d.ts`.

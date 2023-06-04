@@ -1,3 +1,7 @@
+<script lang="ts" context="module">
+	export let title = "How to use page data in SvelteKit";
+</script>
+
 <p>
 	Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
 	quisquam ex, quia id amet numquam neque, aliquid voluptatum

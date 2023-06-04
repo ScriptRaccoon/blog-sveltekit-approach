@@ -4,11 +4,14 @@ declare global {
 	namespace App {
 		// interface Error {}
 		// interface Locals {}
-		interface PageData {
-			title: string;
-		}
+		// interface PageData {}
 		// interface Platform {}
 	}
+
+	type post = {
+		title: string;
+		link: string;
+	};
 }
 
 export {};

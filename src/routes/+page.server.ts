@@ -1,12 +1,18 @@
-export const load = () => {
-	const path_object = import.meta.glob(
-		"/src/routes/post/*/*.svelte"
+export const load = async () => {
+	const posts_paths = Object.keys(
+		import.meta.glob("/src/routes/post/*/*.svelte")
 	);
-	const full_paths = Object.keys(path_object);
 
-	const paths = full_paths
-		.map((path) => path.split("/").at(-2) ?? "")
-		.filter((name) => name.length > 0);
+	const posts: post[] = await Promise.all(
+		posts_paths.map(async (path) => {
+			const link = path.split("/").at(-2) ?? "";
+			const component = await import(
+				`../routes/post/${link}/+page.svelte`
+			);
+			const { title = "" } = component;
+			return { link, title };
+		})
+	);
 
-	return { paths };
+	return { posts };
 };

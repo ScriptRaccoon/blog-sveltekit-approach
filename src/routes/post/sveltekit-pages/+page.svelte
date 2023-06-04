@@ -1,3 +1,7 @@
+<script lang="ts" context="module">
+	export let title = "How pages work in SvelteKit";
+</script>
+
 <p>
 	Lorem ipsum dolor, sit amet consectetur adipisicing elit.
 	Suscipit, dolorum saepe laudantium culpa laborum quidem earum iure

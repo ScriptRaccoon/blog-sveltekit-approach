@@ -1,5 +1,6 @@
 <script lang="ts">
 	export let data;
+	const { posts } = data;
 </script>
 
 <svelte:head>
@@ -10,9 +11,11 @@
 	<h2>All Posts</h2>
 
 	<ul>
-		{#each data.paths as path}
+		{#each posts as post}
 			<li>
-				<a href="/post/{path}">{path}</a>
+				<a href="/post/{post.link}">
+					{post.title}
+				</a>
 			</li>
 		{/each}
 	</ul>

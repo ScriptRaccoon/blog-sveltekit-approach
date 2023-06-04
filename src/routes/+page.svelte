@@ -29,8 +29,4 @@
 	ul {
 		margin-left: 1rem;
 	}
-	.date {
-		color: #444;
-		font-size: smaller;
-	}
 </style>

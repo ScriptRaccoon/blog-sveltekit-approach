@@ -34,6 +34,10 @@ In the wrapper `Post.svelte` component, we render the metadata in a consistent w
 	export let date: Date;
 </script>
 
+<svelte:head>
+	<title>{title}</title>
+</svelte:head>
+
 <h2>{title}</h2>
 
 <p>{date.toLocaleDateString()}</p>
@@ -101,3 +105,5 @@ On the page itself, we can now list links to all posts as follows:
 	{/each}
 </ul>
 ```
+
+It should be clear how to add any other post data, for example a summary, updated-at date, etc.

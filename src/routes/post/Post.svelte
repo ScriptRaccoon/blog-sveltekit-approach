@@ -3,24 +3,15 @@
 	export let date: Date;
 </script>
 
+<svelte:head>
+	<title>{title}</title>
+</svelte:head>
+
 <h2>{title}</h2>
 
-<p class="date">{date.toLocaleDateString()}</p>
+<span class="date">{date.toLocaleDateString()}</span>
 
 <slot />
-
-<p class="link-container">
+<p>
 	<a href="/">All Posts</a>
 </p>
-
-<style>
-	.date {
-		color: #444;
-		font-size: smaller;
-		margin-bottom: 1rem;
-	}
-
-	.link-container {
-		margin-block: 1rem;
-	}
-</style>

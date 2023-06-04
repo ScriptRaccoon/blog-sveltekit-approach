@@ -19,7 +19,7 @@
 	}
 
 	.wrapper {
-		max-width: 38rem;
+		max-width: 40rem;
 		margin-inline: auto;
 	}
 </style>

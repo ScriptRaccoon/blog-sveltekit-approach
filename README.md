@@ -3,7 +3,7 @@
 This repository demonstrates how a blog with SvelteKit can be built,
 without using any markdown or extra packages.
 
-Demo: https://blog-sveltekit-approach
+Demo: https://blog-sveltekit-approach.netlify.app
 
 The idea is to put every blog post inside of a route resp. SvelteKit page. For example, one blog post could be the SvelteKit page `src/routes/post/first-post/+page.svelte`. In these SvelteKit pages, we can do whatever we want. We can also add Svelte components without any extra configuration.
 

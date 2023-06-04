@@ -5,27 +5,22 @@ without using any markdown or extra packages.
 
 Demo: https://blog-sveltekit-approach
 
-The idea is to put every blog post inside of a route. A route must be a folder in SvelteKit, so one post could be `src/routes/post/add-title/`, the content being `+page.svelte`. In these SvelteKit pages, we can do whatever we want. We can also add components and display them.
+The idea is to put every blog post inside of a route resp. SvelteKit page. For example, one blog post could be the SvelteKit page `src/routes/post/first-post/+page.svelte`. In these SvelteKit pages, we can do whatever we want. We can also add Svelte components without any extra configuration.
 
 Metadata are exported from the context script tag:
 
 ```svelte
-<!-- src/routes/post/add-title/+page.svelte --->
+<!-- src/routes/post/first-post/+page.svelte --->
 
 <script lang="ts" context="module">
 	import Post from "../Post.svelte";
-	export let title = "How to add titles";
-	export let date = new Date("2023-04-24");
+	export let title = "My first blog post";
+	export let date = new Date("2023-01-22");
 </script>
 
 <Post {title} {date}>
 	<p>
-		Lorem ipsum dolor sit amet consectetur adipisicing elit.
-		Labore recusandae odio amet ab impedit enim! Molestias
-		praesentium totam cupiditate blanditiis! Veniam modi unde iste
-		quo amet excepturi. Labore mollitia, doloremque animi
-		excepturi natus aperiam in voluptatibus eius ipsum placeat
-		ratione.
+		Write something here
 	</p>
 </Post>
 ```

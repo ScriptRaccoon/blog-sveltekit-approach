@@ -1,7 +1,7 @@
 <script lang="ts" context="module">
 	import Post from "../Post.svelte";
-	export let title = "How to add titles";
-	export let date = new Date("2023-04-24");
+	export let title = "My first blog post";
+	export let date = new Date("2023-01-22");
 </script>
 
 <Post {title} {date}>

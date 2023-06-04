@@ -23,6 +23,14 @@
 			</li>
 		{/each}
 	</ul>
+	<p>
+		Check out the code on <a
+			href="https://github.com/ScriptRaccoon/blog-sveltekit-approach"
+			target="_blank"
+		>
+			GitHub</a
+		>.
+	</p>
 </section>
 
 <style>
